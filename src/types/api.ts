@@ -8,5 +8,3 @@ export interface FailFetch {
   statusCode: string;
   message: string;
 }
-
-export type FetchResult<T> = SuccessFetch<T> | FailFetch;
