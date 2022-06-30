@@ -75,6 +75,7 @@ module.exports = {
         allowAsStatement: true,
       },
     ],
+    'jsx-a11y/label-has-associated-control': [2, { assert: 'either' }],
   },
   settings: {
     'import/resolver': {
