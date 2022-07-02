@@ -4,8 +4,11 @@ export interface Population {
 }
 
 export interface FetchPopulation {
-  boundaryYear: number;
-  data: Population[];
+  label: string;
+  data: {
+    data: Population[];
+    boundaryYear: number;
+  }[];
 }
 
 export interface RequestPopulationParams {
