@@ -16,7 +16,6 @@ export const useFetchPopulation = () => {
     const response = await apiClient.get<SuccessFetch<FetchPopulation[]>>(fetchPopulationParam.url, {
       params: fetchPopulationParam.config,
     });
-    console.log(response);
     return response;
   };
 
