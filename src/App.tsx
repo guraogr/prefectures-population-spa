@@ -1,6 +1,6 @@
 import { RecoilRoot } from 'recoil';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { PrefectureCheckboxList } from './components/Organisms/PrefectureCheckboxList';
+import Home from './components/Pages/Home';
 
 const App = () => {
   const queryClient = new QueryClient();
@@ -8,7 +8,7 @@ const App = () => {
   return (
     <RecoilRoot>
       <QueryClientProvider client={queryClient}>
-        <PrefectureCheckboxList />
+        <Home />
       </QueryClientProvider>
     </RecoilRoot>
   );
